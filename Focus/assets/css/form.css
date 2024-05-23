@@ -1,0 +1,306 @@
+#contact {
+    background: #111;
+    color: #fff;
+    display: flex;
+    z-index: 100;
+}
+
+.content-form {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 100px;
+    gap: 40px;
+}
+
+.content-form h2 {
+    position: relative;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.content-form h2::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 30%;
+    height: 2px;
+    background: #faff00;
+    border-radius: 10px;
+}
+
+.descripton {
+    position: relative;
+    display: flex;
+}
+
+.descripton .cards-contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    position: relative;
+    width: 7px;
+    height: 50%;
+    background: #faff00;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+.descripton .card-contact {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background: #222;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.descripton .card-contact:hover {
+    background: #333;
+}
+
+.descripton .card-contact span {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    border: solid 3px #faff00;
+    border-radius: 50%;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.descripton .card-contact:hover span {
+    background: #333;
+}
+
+.descripton .card-contact ion-icon {
+    position: relative;
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: #faff00;
+}
+
+.text-contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-contact h3 {
+    font-size: 22px;
+}
+
+.text-contact p {
+    font-size: 16px;
+}
+
+
+.form {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding-right: 50px;
+}
+
+.form form {
+    position: relative;
+    width: 60%;
+    height: 80%;
+    background: #222;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form form input {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    outline: none;
+    background: #fff;
+    border: 1px solid #222;
+    color: #000;
+}
+
+.form form input:hover {
+    background: #bebebe;
+}
+
+.form form input::placeholder {
+    color: #000;
+}
+
+.form form input.submit {
+    position: relative;
+    background: #15b100;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.9;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.form form input.submit:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.dropdown, .dropdown2 {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    
+}
+
+.dropdown::before, .dropdown2::before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    z-index: 1000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.dropdown.active::before, .dropdown2.active2::before {
+    top: 22px;
+    transform: rotate(-225deg)
+}
+
+.dropdown .textBox, .dropdown2 .textBox2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    outline: none;
+    background: #fff;
+    border: 1px solid #222;
+    color: #000;
+}
+
+.dropdown .option, .dropdown2 .option {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #333;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.dropdown.active .option, .dropdown2.active2 .option {
+    display: block;
+    z-index: 1;
+}
+
+.dropdown .option div, .dropdown2 .option div {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.dropdown .option div:hover, .dropdown2 .option div:hover {
+    background: #faff00;
+    color: #333;
+}
+
+
+@media  screen and (max-width: 668px) {
+
+    .content-form {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: -20px;
+        gap: 30px;
+    }
+    
+    .content-form h2 {
+        position: relative;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .text-contact h3 {
+        font-size: 18px;
+    }
+
+    .text-contact p {
+        font-size: 14px;
+    }
+    
+    .form {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-right: 0px;
+        padding-bottom: 40px;
+    }
+
+    .form form {
+        width: 80%;
+        height: 100%;
+    }
+
+
+    .form form input.submit {
+        font-size: 16px;
+    }
+
+    .form form input::placeholder {
+        font-size: 12px;
+    }
+
+}

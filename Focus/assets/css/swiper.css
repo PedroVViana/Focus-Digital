@@ -1,0 +1,165 @@
+.wrapperE {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.wrapperE i {
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  font-size: 1.75rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #444;
+  border-radius: 50%;
+  color: #faff00;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapperE i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+
+.wrapperE i:first-child{
+  left: -22px;
+}
+
+.wrapperE i:last-child{
+  right: -22px;
+}
+
+.wrapperE .carouselE {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 2) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carouselE::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselE.no-transition {
+  scroll-behavior: auto;
+}
+
+.carouselE.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carouselE.dragging .cardE {
+  cursor: grab;
+  user-select: none;
+}
+
+.carouselE :where(.cardE, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselE .cardE {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: transparent;
+  cursor: pointer;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.carouselE .cardE .img {
+  height: 100%;
+  width: 100%;
+}
+
+.cardE .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.cardE .img img.mobile {
+  display: none;
+}
+
+.carouselE .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+
+.carouselE .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapperE .carouselE {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .wrapperE {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .wrapperE .carouselE {
+    grid-auto-columns: 100%;
+    
+  }
+
+  .wrapperE i {
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #444;
+    border-radius: 50%;
+    color: #faff00;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .carouselE .cardE {
+    height: 550px;
+  }
+
+  .cardE .img img.mobile {
+    display: block;
+  }
+
+  .cardE .img img.dask {
+    display: none;
+  }
+}

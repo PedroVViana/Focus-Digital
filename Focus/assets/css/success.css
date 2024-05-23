@@ -1,0 +1,185 @@
+body {
+    background: #000;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#success {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    height: 80vh;
+    padding: 20px;
+    background: url(/assets/img/focus\ banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#success h2 {
+    position: relative;
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #faff00;
+    font-weight: 500;
+}
+
+#success p {
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#success img {
+    width: 200px;
+}
+
+.btn-at {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-at a {
+    position: relative;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    background: #15b100;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.btn-at a:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+footer {
+    position: relative;
+    min-height: 200px;
+    width: 100%;
+    bottom: 0;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+footer .top {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+footer .top img {
+    width: 150px;
+}
+
+footer .top .btn-up {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #faff00;
+}
+
+footer .top .btn-up ion-icon {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+footer .top .btn-up:hover ion-icon {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+footer .top .btn-up a {
+    color: #faff00;
+}
+
+footer .top::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 1px;
+    background: #979797;
+    border-radius: 10px;
+}
+
+footer .copyright {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+}
+
+@media  screen and (max-width: 668px) {
+
+    #success h2 {
+        position: relative;
+        font-size: 28px;
+        margin-bottom: 5px;
+        color: #faff00;
+        text-align: center;
+    }
+    
+    #success p {
+        position: relative;
+        font-size: 17px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    
+    #success img {
+        width: 200px;
+    }
+    
+    footer .top {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        height: 50%;
+        top: 0;
+        left: 0;
+        flex-wrap: wrap;
+    }
+
+    footer .copyright p {
+    font-size: 13px;
+    }
+}

@@ -1,0 +1,53 @@
+#service {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: #111;
+    color: #fff;
+    gap: 30px;
+}
+
+#service img {
+    width: 1000px;
+    margin-top: 40px;
+}
+
+#service h2 {
+    position: relative;
+    width: 600px;
+    text-align: center;
+}
+
+#service h2::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 2px;
+    background: #faff00;
+    border-radius: 10px;
+}
+
+
+@media  screen and (max-width: 668px) {
+    #service {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        background: #111;
+        color: #fff;
+        gap: 30px;
+    }
+
+}

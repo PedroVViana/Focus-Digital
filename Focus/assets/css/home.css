@@ -1,0 +1,193 @@
+#home {
+    background: url(/assets/img/focus\ banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    color: #fff;
+    padding: 0 100px;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+.grad {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 200px;
+}
+
+.content {
+    position: relative;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content h2 {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.content h3 {
+    font-size: 35px;
+    font-weight: 300;
+    width: 550px;
+}
+
+.content h3 span {
+    color: #faff00;
+}
+
+.btn {
+    position: relative;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+.btn a {
+    position: relative;
+    font-size: 18px;
+    padding: 15px 25px;
+    background: #15b100;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: .5s;
+    text-transform: uppercase;
+}
+
+.btn:hover a {
+    background: #1ad801;
+    transition: .5s;
+}
+
+.content .empresas {
+    margin-top: 10px;
+    width: 270px;
+    margin-left: -5px;
+}
+
+.content .bandeira {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.content .bandeira img {
+    width: 40px;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero .IMGhero {
+    position: absolute;
+    width: 550px;
+    bottom: 0;
+    right: 50px;
+    transition: 1s;
+}
+
+.hero .IMGhero:hover {
+    width: 600px;
+    transition: 0.7s;
+}
+
+@media  screen and (max-width: 668px) {
+    #home {
+        padding: 0;
+        padding-top: 100px;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .content {
+        position: relative;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: -100px;
+        z-index: 2;
+        margin-bottom: 50px;
+    }
+
+    .content h2 {
+        width: 270px;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .content h3 {
+        font-size: 29px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .btn {
+        position: relative;
+        margin-top: 30px;
+    }
+    
+    .btn a {
+        font-size: 13px;
+    }
+    
+    .btn .btn-home {
+            font-size: 15.5px;
+        }
+
+    .bandeira {
+        position: relative;
+        display: flex;
+        gap: 10px;
+        margin-top: 0px;
+        left: 0;
+    }
+    
+    .bandeira img {
+        width: 30px;
+    }
+
+    .grad {
+        display: none;
+    }
+    
+ 
+    .hero {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero .IMGhero {
+        position: relative;
+        width: 350px;
+        top: 0;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0px;
+    }
+        
+    .hero .IMGhero:hover {
+        width: 380px;
+        transition: 0.7s;
+    }
+
+}

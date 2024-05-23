@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: "Archivo", sans-serif;
+}
+
+body {
+    background: #000;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    padding: 0;
+}
+
+nav .logo img {
+    position: relative;
+    width: 150px;
+    margin-top: 20px;
+    cursor: default;
+}
+
+nav .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav .menu a {
+    position: relative;
+    padding: 15px 20px;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav .menu a:hover {
+    color: #000;
+    background: #faff00;
+}
+
+.btn-zap {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.btn-zap:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.btn-zap img {
+    position: relative;
+    width: 100px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+footer {
+    position: relative;
+    min-height: 200px;
+    width: 100%;
+    bottom: 0;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+
+footer .top {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    flex-wrap: wrap;
+}
+
+footer .top img {
+    width: 150px;
+}
+
+footer .top .btn-up {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #faff00;
+}
+
+footer .top .btn-up ion-icon {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+footer .top .btn-up:hover ion-icon {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+footer .top .btn-up a {
+    color: #faff00;
+}
+
+footer .top::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 1px;
+    background: #979797;
+    border-radius: 10px;
+}
+
+footer .copyright {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+}
+
+@media  screen and (max-width: 668px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav .menu {
+        display: none
+    }
+
+    nav .menu a {
+        font-size: 12px;
+    }
+
+    .btn-zap img {
+        position: relative;
+        width: 60px;
+    }
+
+    section {
+        position: relative;
+        width: 100%;
+        min-height: 50vh;
+        flex-wrap: wrap;
+    }
+
+    footer .copyright p {
+    font-size: 13px;
+    }
+}
